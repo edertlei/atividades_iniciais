@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saudação Personalizada</title>
+</head>
+<body>
+  <label for="nome">Digite seu nome:</label>
+  <input type="text" id="nome" placeholder="Digite seu nome aqui">
+
+  <button onclick="exibirSaudacao()">Mostrar saudação</button>
+
+  <p id="mensagem-saudacao"></p>
+
+  <script>
+    function exibirSaudacao() {        
+  var nome = document.getElementById('nome').value;
+
+      // Verifica se o campo não está vazio
+      if (nome.trim() !== '') {
+        var mensagem = 'Olá ' + nome + ', este é meu site.';
+        // Exibe a mensagem no elemento <p> com id "mensagem-saudacao"
+        document.getElementById('mensagem-saudacao').textContent = mensagem;
+      } else {
+        alert('Por favor, digite seu nome.');
+      }
+    }
+  </script>
+</body>
+</html>
