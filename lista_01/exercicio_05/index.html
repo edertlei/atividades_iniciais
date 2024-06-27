@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Mostrar e ocultar elemento com botões</title>
+<style>
+  /* Estilo opcional para melhor visualização */
+  .elemento {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    margin: 20px;
+    padding: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="elemento" id="elementoVisivel">
+  Este é o elemento que pode ser mostrado ou ocultado.
+</div>
+
+<button onclick="mostrarElemento()">Mostrar Elemento</button>
+<button onclick="ocultarElemento()">Ocultar Elemento</button>
+
+<script>
+function mostrarElemento() {
+  var elemento = document.getElementById('elementoVisivel');
+  elemento.style.display = 'block';
+}
+
+function ocultarElemento() {
+  var elemento = document.getElementById('elementoVisivel');
+  elemento.style.display = 'none';
+}
+</script>
+
+</body>
+</html>
