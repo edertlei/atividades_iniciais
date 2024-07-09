@@ -1,0 +1,25 @@
+
+
+function swap(&$a, &$b) {
+    
+    printf("Valores antes da troca: A = %d, B = %d\n", $a, $b);
+    
+    
+    $temp = $a;
+    $a = $b;
+    $b = $temp;
+    
+    
+    printf("Valores apos a troca: A = %d, B = %d\n", $a, $b);
+}
+
+
+$a = 5;
+$b = 10;
+
+
+swap($a, $b);
+?>
+
+
+
